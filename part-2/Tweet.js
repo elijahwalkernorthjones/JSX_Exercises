@@ -3,7 +3,7 @@ Tweet with : name, sername, date, message,
 */
 
 
-function Tweet(name, username, date, message){
+function Tweet({name, username, date, message}){
     return (
         <div className="tweet">
             <span>{name}</span>

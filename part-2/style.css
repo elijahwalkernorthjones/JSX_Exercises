@@ -1,3 +1,15 @@
-html {
-    background-color: blue;
+.tweet {
+    border: 1px solid #0099cc;
+    border-radius: 5px;
+    margin: 20px 20%;
+    padding: 20px;
+}
+.username,
+.date {
+    color: #999;
+    display: inline-block;
+    margin: 0, 10px;
+    font: 600;
+    font-style: italic;
+    font-size: 1em;
 }
