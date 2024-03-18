@@ -1,4 +1,8 @@
+
+
 const MAX_NAME_NAME_LENGTH_TO_SHOW = 6;
+
+
 
 function Person({ name, age, hobbies }) {
     const voteText = age >= 18
@@ -7,20 +11,18 @@ function Person({ name, age, hobbies }) {
 
     const hobbiesLIs = hobbies.map(hobby => <li>{hobby}</li>)
 
-return (
-    <div>
-        <p>Learn some information about this person:</p>
-        <ul>
-            <li>Name: {name.slice(0, MAX_NAME_NAME_LENGTH_TO_SHOW)}</li>
-            <li>Age: {age}</li>
+    return (
+        <div>
+            <p>Learn some information about this person:</p>
             <ul>
-                Hobbies: {hobbiesLIs}
+                <li>Name: {name.slice(0, MAX_NAME_NAME_LENGTH_TO_SHOW)}</li>
+                <li>Age: {age}</li>
+                <ul>
+                    Hobbies: {hobbiesLIs}
+                </ul>
             </ul>
-        </ul>
-
-    </div>
-    
-)    
-    
-
+            <h3>{voteText}</h3>
+        </div>
+        
+    );
 }

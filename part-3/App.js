@@ -3,15 +3,18 @@ function App() {
         <div>
             <Person 
                 name= "Obie"
-                age= {16}
+                age= {38}
+                hobbies={["Using the force", "Reprimanding Anakin"]}
             />,
             <Person 
                 name= "Shelifinneous"
-                age= {36}
+                age= {6}
+                hobbies={["picking nose", "throwing poop", "throwing ninja stars"]}
             />,
             <Person 
                 name= "Elijah"
                 age= {30}
+                hobbies={["making hood-rat music", "learning to code", "being an overall hoodrat"]}
             />
         </div>
     )
